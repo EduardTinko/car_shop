@@ -69,7 +69,7 @@ class Command(BaseCommand):
         for dealer in dealer_ship_names:
             new_dealership = Dealership.objects.create(name=dealer)
             available_brands = CarType.objects.all()
-            k = random.randint(2, 4)
+            k = random.randint(4, 10)
             selected_brands = random.sample(list(available_brands), k=k)
             new_dealership.available_car_types.set(selected_brands)
 
