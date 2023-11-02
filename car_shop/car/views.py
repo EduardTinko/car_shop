@@ -1,11 +1,10 @@
-from faker import Faker
 from django.db.models import Sum
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse
+from faker import Faker
 
-from .models import Car, CarType, Client, Dealership, Order, OrderQuantity, Licence
-from .forms import CarForm, CarTypeForm, ClientForm, DealershipForm
+from .models import Car, Client, Dealership, Order, OrderQuantity, Licence
 
 # Create your views here.
 
