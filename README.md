@@ -4,7 +4,7 @@ pip install -r requirements.txt
 ```
 Create database:
 ```angular2html
-pyton manage.py migrate
+python manage.py migrate
 ```
 Load demo database(optional):
 ```angular2html
